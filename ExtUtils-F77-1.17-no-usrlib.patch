@@ -1,0 +1,12 @@
+diff -Naur -x '*~' -x '*.orig' -x '*.rej' ExtUtils-F77-1.17/F77.pm ExtUtils-F77-1.17-no-usrlib/F77.pm
+--- ExtUtils-F77-1.17/F77.pm	2011-01-01 01:53:06.000000000 +0000
++++ ExtUtils-F77-1.17-no-usrlib/F77.pm	2011-01-02 12:04:11.000000000 +0000
+@@ -107,7 +107,7 @@
+         $dir = "/usr/local/lib";
+         $lib = "f2c";
+     }  
+-    return( "-L$dir -L/usr/lib -l$lib -lm" );
++    return( "-L$dir -l$lib -lm" );
+ };
+ 
+ $F77config{MinGW}{GFortran}{Link} = sub {

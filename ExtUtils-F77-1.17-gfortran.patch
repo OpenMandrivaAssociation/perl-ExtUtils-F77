@@ -1,0 +1,29 @@
+--- ExtUtils-F77-1.17/F77.pm.gfortran	2011-04-23 19:41:12.000000000 +0200
++++ ExtUtils-F77-1.17/F77.pm	2011-04-23 19:41:33.000000000 +0200
+@@ -90,7 +90,7 @@
+     my @libs = ('g2c', 'f2c');
+     my ($dir, $lib, $test);
+     foreach $test (@libs) {
+-      $dir = `g77 -print-file-name=lib$test.a`;
++      $dir = `gfortran -print-file-name=lib$test.a`;
+       chomp $dir;
+       # Note that -print-file-name returns just the library name
+       # if it cant be found - make sure that we only accept the
+@@ -127,7 +127,7 @@
+ 
+ $F77config{MinGW}{G77}{Trail_} = 1;
+ $F77config{MinGW}{GFortran}{Trail_} = 1;
+-$F77config{MinGW}{G77}{Compiler} = find_in_path('g77','f77','fort77');
++$F77config{MinGW}{G77}{Compiler} = find_in_path('g77','f77','fort77','gfortran');
+ $F77config{MinGW}{GFortran}{Compiler} = "$gfortran";
+ $F77config{MinGW}{G77}{Cflags} = '-O';
+ $F77config{MinGW}{GFortran}{Cflags}   = '-O';
+@@ -480,7 +480,7 @@
+ $Pkg: There does not appear to be any configuration info about
+ $Pkg: the F77 compiler name. Will assume 'f77'.
+ EOD
+-	$Compiler = 'f77';
++	$Compiler = 'gfortran';
+    }
+ print "$Pkg: Compiler: $Compiler\n";
+ 
