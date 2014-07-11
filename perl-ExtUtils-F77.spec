@@ -4,7 +4,7 @@
 Summary:	Simple interface to F77 libs
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	12
+Release:	13
 License:	GPLv2
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/ExtUtils-F77/
