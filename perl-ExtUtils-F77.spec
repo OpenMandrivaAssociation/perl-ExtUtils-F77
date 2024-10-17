@@ -7,7 +7,7 @@ Version:	%perl_convert_version %{modver}
 Release:	18
 License:	GPLv2
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/ExtUtils-F77/
+Url:		https://search.cpan.org/dist/ExtUtils-F77/
 Source0:	http://www.perl.com/CPAN/authors/id/KGB/%{modname}-%{modver}.tar.gz
 Patch0:		ExtUtils-F77-1.17-no-usrlib.patch
 Patch1:		ExtUtils-F77-1.17-gfortran.patch
