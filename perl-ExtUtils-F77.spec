@@ -12,6 +12,7 @@ Source0:	http://www.perl.com/CPAN/authors/id/KGB/%{modname}-%{modver}.tar.gz
 Patch0:		ExtUtils-F77-1.17-no-usrlib.patch
 Patch1:		ExtUtils-F77-1.17-gfortran.patch
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	gcc-gfortran
 Requires:	gcc-gfortran
