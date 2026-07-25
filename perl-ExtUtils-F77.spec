@@ -1,14 +1,14 @@
 %define modname	 ExtUtils-F77
-%define modver 1.17
+%define modver 1.26
 
 Summary:	Simple interface to F77 libs
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	18
+Version:	%{modver}
+Release:	1
 License:	GPLv2
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/ExtUtils-F77/
-Source0:	http://www.perl.com/CPAN/authors/id/KGB/%{modname}-%{modver}.tar.gz
+Url:		https://github.com/PDLPorters/extutils-f77
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETJ/ExtUtils-F77-%{modver}.tar.gz
 Patch0:		ExtUtils-F77-1.17-no-usrlib.patch
 Patch1:		ExtUtils-F77-1.17-gfortran.patch
 BuildArch:	noarch
