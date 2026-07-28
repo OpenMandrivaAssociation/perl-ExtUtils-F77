@@ -4,7 +4,7 @@
 Summary:	Simple interface to F77 libs
 Name:		perl-%{modname}
 Version:	%{modver}
-Release:	2
+Release:	3
 License:	GPLv2
 Group:		Development/Perl
 Url:		https://github.com/PDLPorters/extutils-f77
@@ -13,6 +13,7 @@ BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	gcc-gfortran
+BuildRequires:	perl(File::Which)
 Requires:	gcc-gfortran
 
 %description
