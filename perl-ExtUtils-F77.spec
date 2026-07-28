@@ -4,13 +4,11 @@
 Summary:	Simple interface to F77 libs
 Name:		perl-%{modname}
 Version:	%{modver}
-Release:	1
+Release:	2
 License:	GPLv2
 Group:		Development/Perl
 Url:		https://github.com/PDLPorters/extutils-f77
 Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETJ/ExtUtils-F77-%{modver}.tar.gz
-Patch0:		ExtUtils-F77-1.17-no-usrlib.patch
-Patch1:		ExtUtils-F77-1.17-gfortran.patch
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -27,7 +25,6 @@ and name varies with each OS/compiler combination!
 
 %prep
 %setup -qn %{modname}-%{modver}
-%autopatch -p1
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
